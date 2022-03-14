@@ -31,6 +31,11 @@ h1 {
 .hijo {
   margin: 10px;
   padding: 30px;
+  animation-duration: 2s;
+}
+.hijo:hover {
+  background-color: red;
+  transition: 1s;
 }
 .header {
   background-color: blue;
@@ -40,6 +45,10 @@ h1 {
   background-color: blueviolet;
   grid-area: prodserv;
 }
+.prodserv:hover {
+  transform: rotate(360deg);
+  transition-duration: 3s;
+}
 .extras {
   background-color: dimgrey;
   grid-area: extras;
@@ -48,7 +57,15 @@ h1 {
   background-color: rgb(238, 29, 186);
   grid-area: aside;
 }
+.aside:hover {
+  transform: scale(1.5, 1.5);
+  transition-duration: 1s;
+}
 .footer {
   background-color: green;
   grid-area: footer;
+}
+.footer:hover {
+  transform: translate(0px, 30px);
+  transition-duration: 2s;
 }
